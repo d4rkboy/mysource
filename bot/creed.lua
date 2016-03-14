@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '1.0'
+VERSION = 'p-1'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -236,23 +236,24 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {118682430},--Sudo users
+    sudo_users = {177618046,185963103,206637124,57426785},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Creed bot 2.3
+    about_text = [[
+    BOTNEX-P1
+    OPEN NOW😍
+   
+    https://github.com/behradhg/botnex-p1/
     
-     Hello my Good friends 
-     
-    ‼️ this bot is made by : @creed_is_dead
-   〰〰〰〰〰〰〰〰
-   ߔࠀ   our admins are : 
-   ߔࠀ   @sorblack_creed
-   ߔࠀ   @amircc_creed
-   ߔࠀ   @aria_creed
-   〰〰〰〰〰〰〰〰
-  ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
-   تمامی درخواست ها و همه ی انتقادات و حرفاتونو با دستور زیر بفرستین به ما
-   !feedback (your ideas and messages)
+    SUDO:
+    
+    @M_O_T_A_F_E_G_H_I_N
+    
+    @Alireza_RmZz
+    
+    @Oo_SaRdAr_marginam_revale_oO
+    
+    
 ]],
     help_text_realm = [[
 Realm Commands:
