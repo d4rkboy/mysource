@@ -147,6 +147,11 @@ end
 
 
 return {
+    description = "all  ", 
+  usage = {
+   "!all: دریافت تمام خصوصیات گروه.",
+    
+  },
   patterns = {
   "^[!/](all)$",
   "^[!/](all) (%d+)$"
