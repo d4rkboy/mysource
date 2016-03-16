@@ -237,7 +237,7 @@ function create_config( )
     "leave_ban",
     "plugins"
     },
-    sudo_users = {177618046,185963103,206637124,57426785},--Sudo users
+    sudo_users = {115740444},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -248,11 +248,7 @@ function create_config( )
     
     SUDO:
     
-    @M_O_T_A_F_E_G_H_I_N
-    
-    @Alireza_RmZz
-    
-    @Oo_SaRdAr_marginam_revale_oO
+    @Aryan_daltons
     
     
 ]],
