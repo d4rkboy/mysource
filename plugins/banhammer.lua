@@ -257,7 +257,7 @@ end
     return
   end
 
-  if matches[1]:lower() == 'banall' then -- Global ban
+  if matches[1]:lower() == 'gb' then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin(msg) then
       return get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -273,7 +273,7 @@ end
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
-		get_cmd = 'banall',
+		get_cmd = 'gb',
 		from_id = msg.from.id
 	}
 		local username = matches[2]
@@ -307,22 +307,29 @@ end
 end
 
 return {
+  description = "banhammer", 
+  usage = {
+    "!ban : بن کردن فردی از گروه",
+    "!kick : کیک کردن فردی از گروه",
+    "!unban : خارج کردن از بن",
+    "!id : دادن ایدی گروه",
+  },
   patterns = {
-    "^[!/]([Bb]anall) (.*)$",
-    "^[!/]([Bb]anall)$",
-    "^[!/]([Bb]anlist) (.*)$",
-    "^[!/]([Bb]anlist)$",
-    "^[!/]([Gg]banlist)$",
-    "^[!/]([Bb]an) (.*)$",
-    "^[!/]([Kk]ick)$",
-    "^[!/]([Uu]nban) (.*)$",
-    "^[!/]([Uu]nbanall) (.*)$",
-    "^[!/]([Uu]nbanall)$",
-    "^[!/]([Kk]ick) (.*)$",
-    "^[!/]([Kk]ickme)$",
-    "^[!/]([Bb]an)$",
-    "^[!/]([Uu]nban)$",
-    "^[!/]([Ii]d)$",
+    "^[!/ #]([Gg][Bb]) (.*)$",
+    "^[!/ #]([Gg][Bb])$",
+    "^[!/ #]([Bb]anlist) (.*)$",
+    "^[!/ #]([Bb]anlist)$",
+    "^[!/ #]([Gg]banlist)$",
+    "^[!/ #]([Bb]an) (.*)$",
+    "^[!/ #]([Kk]ick)$",
+    "^[!/ #]([Uu]nban) (.*)$",
+    "^[!/ #]([Uu]nbanall) (.*)$",
+    "^[!/ #]([Uu]nbanall)$",
+    "^[!/ #]([Kk]ick) (.*)$",
+    "^[!/ #]([Kk]ickme)$",
+    "^[!/ #]([Bb]an)$",
+    "^[!/ #]([Uu]nban)$",
+    "^[!/ #]([Ii]d)$",
     "^!!tgservice (.+)$"
   },
   run = run,
