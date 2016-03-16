@@ -1523,6 +1523,10 @@ local function run(msg, matches)
 end
 
 return {
+  description = " ", 
+  usage = {
+
+  },
   patterns = {
   "^[!/.]([Aa]dd)$",
   "^[!/.]([Aa]dd) (realm)$",
