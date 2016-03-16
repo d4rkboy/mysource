@@ -1,10 +1,4 @@
---[[
-Bot can join into a group by replying a message contain an invite link or by
-typing !add [invite link].
-URL.parse cannot parsing complicated message. So, this plugin only works for
-single [invite link] in a post.
-[invite link] may be preceeded but must not followed by another characters.
---]]
+
 
 do
 
@@ -41,8 +35,8 @@ do
   return {
     description = 'Invite the bot into a group chat via its invite link.',
     usage = {
-      '!AddBot : Join a group by replying a message containing invite link.',
-      '!AddBot [invite_link] : Join into a group by providing their [invite_link].'
+      '!AddBot : با ریپلی کردن بر متنی دارای لینک.',
+      '!AddBot [invite_link] : وارد شدن به گروهی با لینک.'
       },
     patterns = {
       '^[/!](addBot)$',
