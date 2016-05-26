@@ -35,12 +35,12 @@ do
   return {
     description = 'Invite the bot into a group chat via its invite link.',
     usage = {
-      '!AddBot : با ریپلی کردن بر متنی دارای لینک.',
-      '!AddBot [invite_link] : وارد شدن به گروهی با لینک.'
+      '!addbot : با ریپلی کردن بر متنی دارای لینک.',
+      '!addbot [invite_link] : وارد شدن به گروهی با لینک.'
       },
     patterns = {
-      '^[/!](addBot)$',
-      '^[/!](ddBot) (.*)$'
+      '^[/!](addbot)$',
+      '^[/!](addbot) (.*)$'
     },
     run = run
   }
