@@ -226,6 +226,8 @@ function create_config( )
     "sudoers",
     "add_admin",
     "anti_spam",
+    "autospam",
+    "about",
     "add_bot",
     "owners",
     "set",
